@@ -23,7 +23,9 @@
     <main>
       <section id="about">
         <h2>Chi sono</h2>
-        <p>Sono Orazio, studio ingegneria informatica ampliando le mie conoscenze in ambito front end.</p>
+        <p>Sono Orazio Danzuso, studio ingegneria informatica ampliando le mie conoscenze in ambito front end.
+          inizio del 3^ anno di università,poca esperienza nell'ambito della programmazione se non a livello accademico, tento di acquisire conoscenze nel tempo libero tramite progetti nei vari linguaggi di programmazione
+        </p>
       </section>
 
       <section id="skills">
@@ -32,36 +34,48 @@
           <li>HTML5</li>
           <li>CSS3</li>
           <li>Git & GitHub</li>
+          <li>python</li>
+          <li>C/C++</li>
+          <li>JavaScript</li>
+          <li>Machine LEarning</li>
+
         </ul>
       </section>
     </main>
 
     <footer>
-      <section id="contact">
-        <h2>Contattami</h2>
-        <p>Email: oraziodanzuso@gmail.com</p>
-        <p>GitHub: <a href="https://github.com/DaOr4">GitHub profilo</a></p>
-      </section>
-    </footer>
+  
+    <footer>
+  <section id="contact">
+    <h2>Contatti</h2>
+    <button class="button" onclick="mostraEmail()">Mostra Email</button>
+    <p id="email" style="display: none; margin-top: 10px;"></p>
+    <button class="button" onclick="mostraGit()">Mostra Git</button>
+    <p id="git" style="display: none; margin-top: 10px;"></p>
+  </section>
+</footer>
+
+<script>
+  function mostraEmail() {
+    const emailElement = document.getElementById("email");
+    const buttons = document.querySelectorAll(".button")[0]; // primo bottone
+    emailElement.textContent = "oraziodanzuso@gmail.com";
+    emailElement.style.display = "block";
+    buttons.style.display = "none";
+  }
+
+  function mostraGit() {
+    const gitElement = document.getElementById("git");
+    const buttons = document.querySelectorAll(".button")[1]; // secondo bottone
+    gitElement.textContent = "https://github.com/DaOr4";
+    gitElement.style.display = "block";
+    buttons.style.display = "none";
+  }
+</script>
+
+
   </body>
 </html>
 
 
 
-
-<!DOCTYPE html>
-<html lang="it">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Orazio Dev</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
-  <body>
-    <div class="container">
-      <h1>Ciao, sono Orazio 👋</h1>
-      <p>Studente di ingegneria informatica, futuro front-end developer!</p>
-      <a href="https://github.com/DaOr4" target="_blank">📂 Il mio GitHub</a>
-    </div>
-  </body>
-</html>
